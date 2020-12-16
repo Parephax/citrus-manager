@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ejdi9dcna30y15uv5(1w6^bf*fns0jq$#skll=v097p^u2vzp2'
+SECRET_KEY = 'badtoken'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -126,3 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# #####################################################################################################################
+# This imports local settings configuration. Must be kept at the very end of the file!
+try:
+    from .localsettings import *  # pylint: disable=unused-wildcard-import
+except ImportError as e:
+    print("No localsettings file found: " + str(e))

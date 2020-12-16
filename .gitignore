@@ -351,10 +351,15 @@ MigrationBackup/
 
 # Virtual Environment
 .venv/
-venv/
 
 # VS Code
 .vscode/
 
 # SQLite
 *.sqlite3
+
+# PyCharm
+.idea/
+
+# Local Settings
+localsettings.py
