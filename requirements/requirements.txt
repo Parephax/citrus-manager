@@ -11,12 +11,12 @@ attrs==20.3.0             # via automat, service-identity, twisted
 autobahn==20.12.2         # via daphne
 automat==20.2.0           # via twisted
 cffi==1.14.4              # via cryptography
-channels-redis==3.2.0     # via -r requirements\requirements-base.in
-channels==3.0.2           # via -r requirements\requirements-base.in, channels-redis
+channels-redis==3.2.0     # via -r requirements\base-requirements.in
+channels==3.0.2           # via -r requirements\base-requirements.in, channels-redis
 constantly==15.1.0        # via twisted
 cryptography==3.3.1       # via autobahn, pyopenssl, service-identity
 daphne==3.0.1             # via channels
-django==3.1.4             # via -r requirements\requirements-base.in, channels
+django==3.1.4             # via -r requirements\base-requirements.in, channels
 hiredis==1.1.0            # via aioredis
 hyperlink==20.0.1         # via twisted
 idna==2.10                # via hyperlink, twisted

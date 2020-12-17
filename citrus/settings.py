@@ -75,7 +75,23 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'citrus.wsgi.application'
+
+
+# Channels
+# https://channels.readthedocs.io/en/stable/index.html
+
 ASGI_APPLICATION = 'citrus.asgi.application'
+CHANNEL_LAYERS = {
+    # 'default': {
+    #     'BACKEND': 'channels_redis.core.RedisChannelLayer',
+    #     'CONFIG': {
+    #         "hosts": [('localhost', 6379)],
+    #     },
+    # },
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
 
 
 # Database

@@ -11,6 +11,7 @@ async-timeout==3.0.1      # via aioredis
 attrs==20.3.0             # via automat, service-identity, twisted
 autobahn==20.12.2         # via daphne
 automat==20.2.0           # via twisted
+autopep8==1.5.4           # via -r requirements\requirements-dev.in
 cffi==1.14.4              # via cryptography
 channels-redis==3.2.0     # via -r requirements\base-requirements.in
 channels==3.0.2           # via -r requirements\base-requirements.in, channels-redis
@@ -30,6 +31,7 @@ mock==4.0.3               # via -r requirements\requirements-dev.in
 msgpack==1.0.1            # via channels-redis
 pyasn1-modules==0.2.8     # via service-identity
 pyasn1==0.4.8             # via pyasn1-modules, service-identity
+pycodestyle==2.6.0        # via autopep8
 pycparser==2.20           # via cffi
 pyhamcrest==2.0.2         # via twisted
 pylint==2.6.0             # via -r requirements\requirements-dev.in
@@ -38,7 +40,7 @@ pytz==2020.4              # via django
 service-identity==18.1.0  # via twisted
 six==1.15.0               # via astroid, automat, cryptography, pyopenssl
 sqlparse==0.4.1           # via django
-toml==0.10.2              # via pylint
+toml==0.10.2              # via autopep8, pylint
 twisted[tls]==20.3.0      # via daphne
 txaio==20.4.1             # via autobahn
 typed-ast==1.4.1          # via astroid
