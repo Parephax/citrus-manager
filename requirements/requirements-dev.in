@@ -1,0 +1,4 @@
+-r "base-requirements.in"
+
+mock
+pylint
