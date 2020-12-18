@@ -88,3 +88,10 @@ To see migrations applied to the Django database, run::
 To apply unapplied migrations for the application or an app, run::
 
     python manage.py migrate [app]
+
+Resources
+---------
+
+Django Documentation: https://www.djangoproject.com/
+
+Channels Documentation: https://channels.readthedocs.io/en/stable/introduction.html
