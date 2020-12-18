@@ -49,22 +49,18 @@ is done using Redis.
 To set the Channel Layers backstore, see the :file:`citrus/settings.py` and
 under the `CHANNEL_LAYERS` object, set a default channel layer using::
 
-    For Local Memory::
-    ```
+    # For Local Memory
     'default': {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',
     },
-    ```
 
-    With Redis Server::
-    ```
+    # For Redis Server
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
             "hosts": [('localhost', 6379)],
         },
     },
-    ```
 
 The best way to install Redis in development is via Docker. Download and
 install Docker for your system, then run::
