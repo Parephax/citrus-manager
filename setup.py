@@ -10,7 +10,7 @@ LONG_DESC = open(os.path.join(HERE, 'README.rst')).read()
 
 setup(
     name='foo',
-    version='0.0.1indev-build4',
+    version='0.0.1indev-build5',
     description='A useful module',
     author='Man Foo',
     author_email='foomail@foo.com',
