@@ -32,8 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Local Applications
-    'core',
-    'chat',
+    'core.apps.CoreConfig',
+    'chat.apps.ChatConfig',
 
     # Django Applications
     'django.contrib.admin',
