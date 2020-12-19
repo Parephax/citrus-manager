@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Local Applications
+    'core',
     'chat',
 
     # Django Applications
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+LOGIN_URL = '/login/'
 
 ROOT_URLCONF = 'citrus.urls'
 

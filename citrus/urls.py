@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 
+import chat.urls
+import core.urls
+
 
 urlpatterns = [
-    path('chat/', include('chat.urls')),
+    path('chat/', include('chat.urls', namespace=chat.urls.app_name)),
     path('admin/', admin.site.urls),
+    path('', include('core.urls', namespace=core.urls.app_name)),
 ]
