@@ -348,3 +348,18 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Virtual Environment
+.venv/
+
+# VS Code Settings
+.vscode/settings.json
+
+# SQLite
+*.sqlite3
+
+# PyCharm
+.idea/
+
+# Local Settings
+localsettings.py

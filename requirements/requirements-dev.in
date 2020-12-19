@@ -1,0 +1,7 @@
+-r "base-requirements.in"
+
+autopep8
+bumpversion
+ipython
+mock
+pylint

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <title>{% block title %}CITRUS{% endblock %}</title>
+  <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
+  {% block head %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+  {% endblock %}
+</head>
+<body>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+  <footer>
+    {% block footer %}{% endblock %}
+  </footer>
+</section>
+{% block script %}
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+{% endblock %}
+</body>
+</html>

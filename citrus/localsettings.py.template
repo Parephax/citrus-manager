@@ -1,0 +1,3 @@
+DEBUG = %(debug_mode)s
+SECRET_KEY = '%(secret_key)s'
+ALLOWED_HOSTS = %(allowed_hosts)s
