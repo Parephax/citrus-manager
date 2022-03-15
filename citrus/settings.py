@@ -103,10 +103,7 @@ CHANNEL_LAYERS = {
 # Django NPM
 # https://github.com/kevin1024/django-npm#readme
 
-NPM_STATIC_FILES_PREFIX = os.path.join('js', 'npm')
-NPM_FILE_PATTERNS = {
-    'htmx.org': ['dist/*']
-}
+NPM_STATIC_FILES_PREFIX = os.path.join('npm')
 
 
 # Database
@@ -165,7 +162,7 @@ STATIC_URL = '/static/'
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'npm.finders.NpmFinder'
+    'npm.finders.NpmFinder',
 ]
 
 # #####################################################################################################################
