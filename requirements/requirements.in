@@ -1,1 +1,1 @@
--r "requirements.base"
+-r "base.in"

@@ -37,10 +37,10 @@ cffi==1.14.4
     # via cryptography
 channels==3.0.2
     # via
-    #   -r .\requirements\dev\../requirements.base
+    #   -r .\requirements\dev\../base.in
     #   channels-redis
 channels-redis==3.2.0
-    # via -r .\requirements\dev\../requirements.base
+    # via -r .\requirements\dev\../base.in
 colorama==0.4.4
     # via
     #   ipython
@@ -58,7 +58,7 @@ decorator==4.4.2
     # via ipython
 django==3.1.4
     # via
-    #   -r .\requirements\dev\../requirements.base
+    #   -r .\requirements\dev\../base.in
     #   channels
 hiredis==1.1.0
     # via aioredis
@@ -68,7 +68,7 @@ idna==2.10
     # via
     #   hyperlink
     #   twisted
-incremental==17.5.0
+incremental==21.3.0
     # via twisted
 ipython==7.19.0
     # via -r .\requirements\dev\requirements.in
@@ -104,8 +104,6 @@ pycparser==2.20
     # via cffi
 pygments==2.7.3
     # via ipython
-pyhamcrest==2.0.2
-    # via twisted
 pylint==2.6.0
     # via -r .\requirements\dev\requirements.in
 pyopenssl==20.0.1
@@ -128,10 +126,16 @@ toml==0.10.2
     #   pylint
 traitlets==5.0.5
     # via ipython
-twisted[tls]==20.3.0
-    # via daphne
+twisted[tls]==22.2.0
+    # via
+    #   -r .\requirements\dev\../base.in
+    #   daphne
+twisted-iocpsupport==1.0.2
+    # via twisted
 txaio==20.4.1
     # via autobahn
+typing-extensions==4.1.1
+    # via twisted
 wcwidth==0.2.5
     # via prompt-toolkit
 wrapt==1.12.1

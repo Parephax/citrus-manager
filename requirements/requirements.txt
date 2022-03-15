@@ -6,55 +6,57 @@
 #
 aioredis==1.3.1
     # via channels-redis
-asgiref==3.3.1
+asgiref==3.5.0
     # via
     #   channels
     #   channels-redis
     #   daphne
     #   django
-async-timeout==3.0.1
+async-timeout==4.0.2
     # via aioredis
-attrs==20.3.0
+attrs==21.4.0
     # via
     #   automat
     #   service-identity
     #   twisted
-autobahn==20.12.2
+autobahn==22.2.2
     # via daphne
 automat==20.2.0
     # via twisted
-cffi==1.14.4
+cffi==1.15.0
     # via cryptography
-channels==3.0.2
+channels==3.0.4
     # via
-    #   -r .\requirements\requirements.base
+    #   -r .\requirements\base.in
     #   channels-redis
-channels-redis==3.2.0
-    # via -r .\requirements\requirements.base
+channels-redis==3.4.0
+    # via -r .\requirements\base.in
 constantly==15.1.0
     # via twisted
-cryptography==3.3.1
+cryptography==36.0.1
     # via
     #   autobahn
     #   pyopenssl
     #   service-identity
-daphne==3.0.1
+daphne==3.0.2
     # via channels
-django==3.1.4
+django==4.0.3
     # via
-    #   -r .\requirements\requirements.base
+    #   -r .\requirements\base.in
     #   channels
-hiredis==1.1.0
+hiredis==2.0.0
     # via aioredis
-hyperlink==20.0.1
-    # via twisted
-idna==2.10
+hyperlink==21.0.0
+    # via
+    #   autobahn
+    #   twisted
+idna==3.3
     # via
     #   hyperlink
     #   twisted
-incremental==17.5.0
+incremental==21.3.0
     # via twisted
-msgpack==1.0.1
+msgpack==1.0.3
     # via channels-redis
 pyasn1==0.4.8
     # via
@@ -62,28 +64,31 @@ pyasn1==0.4.8
     #   service-identity
 pyasn1-modules==0.2.8
     # via service-identity
-pycparser==2.20
+pycparser==2.21
     # via cffi
-pyhamcrest==2.0.2
+pyopenssl==22.0.0
     # via twisted
-pyopenssl==20.0.1
+service-identity==21.1.0
     # via twisted
-pytz==2020.4
-    # via django
-service-identity==18.1.0
-    # via twisted
-six==1.15.0
+six==1.16.0
     # via
     #   automat
-    #   cryptography
-    #   pyopenssl
-sqlparse==0.4.1
+    #   service-identity
+sqlparse==0.4.2
     # via django
-twisted[tls]==20.3.0
-    # via daphne
-txaio==20.4.1
+twisted[tls]==22.2.0
+    # via
+    #   -r .\requirements\base.in
+    #   daphne
+twisted-iocpsupport==1.0.2
+    # via twisted
+txaio==22.2.1
     # via autobahn
-zope-interface==5.2.0
+typing-extensions==4.1.1
+    # via twisted
+tzdata==2021.5
+    # via django
+zope-interface==5.4.0
     # via twisted
 
 # The following packages are considered to be unsafe in a requirements file:
