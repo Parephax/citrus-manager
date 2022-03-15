@@ -354,6 +354,7 @@ MigrationBackup/
 
 # VS Code Settings
 .vscode/settings.json
+*.code-workspace
 
 # SQLite
 *.sqlite3
