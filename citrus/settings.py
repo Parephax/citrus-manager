@@ -162,6 +162,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'npm.finders.NpmFinder'
+]
 
 # #####################################################################################################################
 # This imports local settings configuration. Must be kept at the very end of the file!
