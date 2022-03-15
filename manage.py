@@ -3,8 +3,6 @@
 import os
 import sys
 
-from npm.finders import npm_install
-
 
 def main():
     """Run administrative tasks."""
@@ -21,8 +19,4 @@ def main():
 
 
 if __name__ == '__main__':
-    # Install Node Modules
-    npm_install()
-
-    # Run
     main()
