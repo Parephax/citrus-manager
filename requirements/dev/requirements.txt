@@ -60,6 +60,8 @@ django==3.1.4
     # via
     #   -r .\requirements\dev\../base.in
     #   channels
+django-npm==1.0.0
+    # via -r .\requirements\dev\../base.in
 hiredis==1.1.0
     # via aioredis
 hyperlink==20.0.1

@@ -44,6 +44,8 @@ django==4.0.3
     # via
     #   -r .\requirements\base.in
     #   channels
+django-npm==1.0.0
+    # via -r .\requirements\base.in
 hiredis==2.0.0
     # via aioredis
 hyperlink==21.0.0

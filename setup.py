@@ -9,7 +9,7 @@ LONG_DESC = open(os.path.join(HERE, 'README.rst')).read()
 
 setup(
     name='citrus',
-    version='1.0.0-indev',
+    version='0.1.0-beta',
     description='Custom Input Tabletop RPG Utility System',
     long_description=LONG_DESC,
     author='Fathomless Games',

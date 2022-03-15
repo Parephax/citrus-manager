@@ -10,11 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -25,10 +26,11 @@ SECRET_KEY = 'badtoken'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# SECURITY WARNING: Specify exact hosts when running in production!
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application Definition
 
 INSTALLED_APPS = [
     # Local Applications
@@ -94,6 +96,15 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',
     },
+}
+
+
+# Django NPM
+# https://github.com/kevin1024/django-npm#readme
+
+NPM_STATIC_FILES_PREFIX = os.path.join('js', 'npm')
+NPM_FILE_PATTERNS = {
+    'htmx.org': ['dist/*']
 }
 
 
