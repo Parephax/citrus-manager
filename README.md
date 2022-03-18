@@ -1,2 +1,2 @@
 # CITRUS
-Web-Service Tabletop RPG Management Software
+Tabletop RPG Management Web Application
