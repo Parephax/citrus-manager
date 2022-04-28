@@ -18,7 +18,8 @@ setup(
     packages=find_packages(include=['citrus']),
     include_package_data=True,
     install_requires=[
-        'django',
+        'django==3.2.13',
+        'django-npm=1.0.0'
         'channels',
         'channels_redis'
     ],

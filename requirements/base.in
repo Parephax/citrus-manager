@@ -1,8 +1,8 @@
 channels
 channels-redis
-django
-django-npm
+django==3.2.13
+django-npm==1.0.0
 
 # channels requires daphne, which requires twisted[tls]
 # twisted[tls] must be >20 for Python 3.10 due to legacy code in older versions
-twisted[tls]>20
+# twisted[tls]>20
