@@ -1,6 +1,6 @@
 {
     "name": "citrus",
-    "version": "0.1.0-beta",
+    "version": "0.1.0-prod",
     "description": "Custom Input Tabletop RPG Utility System",
     "repository": {
       "type": "git",
