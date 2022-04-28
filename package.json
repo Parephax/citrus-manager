@@ -1,19 +1,17 @@
 {
-    "name": "citrus",
-    "version": "0.1.0-prod",
-    "description": "Custom Input Tabletop RPG Utility System",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/Parephax/CITRUS.git"
-    },
-    "author": "Jacqueline A.P.",
-    "license": "GPL-3.0",
-    "dependencies": {
-      "htmx.org": "^1.7.0",
-      "bootstrap": "^5.1.3",
-      "jquery": "^3.6.0"
-    },
-    "devDependencies": {
-    }
-  }
-  
+  "name": "citrus",
+  "version": "0.1.0-prod",
+  "description": "Custom Input Tabletop RPG Utility System",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Parephax/CITRUS.git"
+  },
+  "author": "Jacqueline A.P.",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "htmx.org": "^1.7.0",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {}
+}
