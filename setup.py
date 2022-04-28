@@ -14,7 +14,7 @@ setup(
     long_description=LONG_DESC,
     author='Fathomless Games',
     author_email='fathomlessgames@gmail.com',
-    url='https://github.com/Parephax/CITRUS/',
+    url='https://github.com/Parephax/citrus-manager/',
     packages=find_packages(include=['citrus']),
     include_package_data=True,
     install_requires=[
