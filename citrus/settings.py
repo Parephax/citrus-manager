@@ -116,7 +116,6 @@ DATABASES = {
         'TEST': {
             'NAME': BASE_DIR / 'db_test.sqlite3'
         }
-
     }
 }
 
