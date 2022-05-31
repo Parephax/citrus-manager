@@ -1,0 +1,61 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+        <img src="{% static 'assets/images/citrus-header-full.png' %}" 
+        alt="CITRUS System Manager" class="img-fluid mx-auto d-block"
+        style="padding-top: 25px; max-width: 50%; height: auto;">
+</div>
+<div class="contain-md" style="padding-top: 50px">
+    <div class="d-flex align-items-center justify-content-center">
+        {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+        {% endif %}
+
+        {% if next %}
+            {% if user.is_authenticated %}
+            <p>Your account doesn't have access to this page. To proceed,
+            please login with an account that has access.</p>
+            {% else %}
+            <p>Please login to see this page.</p>
+            {% endif %}
+        {% endif %}
+    </div>
+    <div>
+        <form method="post" action="{% url 'core:login' %}">
+        {% csrf_token %}
+        <div class="d-flex align-items-center justify-content-center">
+            <table>
+                <tr>
+                    <td style="text-align: center">{{ form.username.label_tag }}</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px">{{ form.username }}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">{{ form.password.label_tag }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.password }}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="d-flex align-items-center justify-content-center">
+            <input type="submit" value="Login">
+            <input type="hidden" name="next" value="{{ next }}">
+        </div>
+        </form>
+    </div>
+    
+    <br>
+    <div class="d-flex align-items-center justify-content-center">
+        {# Assumes you setup the password_reset view in your URLconf #}
+        {# <p><a href="{% url 'core:password_reset' %}">Lost password?</a></p> #}
+    </div>
+</div>
+
+{% endblock %}
