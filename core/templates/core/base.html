@@ -3,30 +3,33 @@
 {% load static %}
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}CITRUS{% endblock %}</title>
-  <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
-  {% block head %}
-    <link rel="stylesheet" href="{% static 'npm/bootstrap/dist/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'npm/bootstrap/dist/css/bootstrap-grid.min.css' %}">
-    <link rel="stylesheet" href="{% static 'npm/bootstrap/dist/css/bootstrap-reboot.min.css' %}">
-  {% endblock %}
-</head>
-<body>
-<section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% block content %}{% endblock %}
-  <footer>
-    {% block footer %}{% endblock %}
-  </footer>
-</section>
-{% block script %}
-  <script src="{% static 'npm/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'npm/jquery/dist/jquery.min.js' %}"></script>
-{% endblock %}
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Citrus Manager{% endblock %}</title>
+
+        <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'npm/bootstrap/dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'npm/bootstrap/dist/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'npm/bootstrap/dist/css/bootstrap-reboot.min.css' %}">
+
+        {% block head %}
+        
+        {% endblock %}
+    </head>
+    <body>
+        <section class="content">
+        <header>
+            {% block header %}{% endblock %}
+        </header>
+        {% block content %}{% endblock %}
+        <footer>
+            {% block footer %}{% endblock %}
+        </footer>
+        </section>
+        {% block script %}
+        <script src="{% static 'npm/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'npm/jquery/dist/jquery.min.js' %}"></script>
+        {% endblock %}
+    </body>
 </html>
